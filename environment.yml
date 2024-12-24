@@ -1,0 +1,15 @@
+name: javadoc_inconsistency
+channels:
+  - pytorch
+  - defaults
+  - conda-forge
+  - nvidia
+dependencies:
+  - python=3.12.8
+  - pytorch=2.3.1
+  - transformers=4.45.2
+  - scikit-learn=1.5.2
+  - streamlit=1.40.1
+  - openai=1.52.1
+  - pip:
+      - javalang-ext==0.14.3
