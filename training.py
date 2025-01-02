@@ -25,11 +25,11 @@ SPLITS = ["train", "valid", "test"]
 MAX_LEN_CODE = 64
 MAX_LEN_COMMENT = 256
 
-BATCH_SIZE = 8
+BATCH_SIZE = 16
 LEARNING_RATE = 1e-5
 WEIGHT_DECAY = 1e-2
-NUM_EPOCHS = 5
-EARLY_STOPPING_PATIENCE = 2
+NUM_EPOCHS = 10
+EARLY_STOPPING_PATIENCE = 3
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "mps")
 MODEL_NAME = "microsoft/codebert-base"
